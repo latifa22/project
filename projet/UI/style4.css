@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: bisque;
+  font-family: Arial, sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url(image.png);
+  background-repeat: no-repeat;
+  /*background-position: fixed; */
+}
+.header {
+  backdrop-filter: blur(20px);
+}
+.head {
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.logo {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.palestine {
+  text-decoration: none;
+}
+
+.nav {
+  width: 800px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+#login,
+#signup {
+  color: #ecb24e;
+  text-decoration: none;
+}
+
+#education,
+#health,
+#donation,
+#work {
+  text-decoration: none;
+}
+
+.main {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div1 {
+  padding-bottom: 2rem;
+}
+
+.div2 {
+  padding-bottom: 5rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .nav {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo {
+    width: auto;
+  }
+
+  #login,
+  #signup,
+  #education,
+  #health,
+  #donation,
+  #work {
+    padding: 10px;
+  }
+}

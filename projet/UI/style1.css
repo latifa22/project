@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(image.png);
+}
+
+.sec {
+  height: 70%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #979797;
+  border-radius: 5%;
+  padding: 1rem;
+  backdrop-filter: blur(20px);
+}
+
+.f {
+  width: 80%;
+}
+
+.t {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.l1 {
+  font-size: 20px;
+  height: 45px;
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+.d1 {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 1rem;
+  margin-top: -1rem;
+}
+
+.fullname {
+  width: 90%;
+  height: 40px;
+  font-size: 13px;
+}
+
+.sexe {
+  font-size: 20px;
+  margin-top: -1rem;
+}
+
+.gender {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.gender input {
+  margin-right: 5px;
+}
+
+.d,
+.p {
+  font-size: 19px;
+}
+
+#dob,
+#phone {
+  width: 90%;
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.next {
+  color: black;
+}
+
+.last {
+  display: flex;
+  justify-content: end;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .sec {
+    width: 80%;
+  }
+
+  .fullname,
+  #dob,
+  #phone {
+    width: 100%;
+  }
+
+  .last {
+    justify-content: center;
+  }
+}
